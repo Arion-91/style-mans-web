@@ -1,0 +1,103 @@
+.gallery, .news {
+    margin: 30px auto;
+    position: relative;
+    font-size: 20px;
+}
+
+.gallery-title, .news-title {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.gallery-slider, .news-slider {
+    margin: 0 20px;
+}
+
+.gallery-slide-item, .news-slider-item {
+    margin: 2px;
+    max-width: 400px;
+    max-height: 400px;
+    border: none;
+}
+
+.news-slider-item {
+    position: relative;
+    margin: 4px;
+    border: 2px solid #00BDD3;
+    border-radius: 20px;
+}
+
+.news-slider-item img {
+    border-radius: 20px;
+}
+
+.news-slider-item p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: -1px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.94);
+    font-size: 16px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 0;
+}
+
+.gallery-dots ul {
+    list-style-type: none;
+}
+
+.gallery-dots li {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #00BDD3;
+}
+
+.gallery-dots .slick-active {
+    background-color: #00BDD3;
+}
+
+.gallery-arrow, .news-arrow {
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 31px;
+    height: 57px;
+    background: transparent url("../img/step-arrow.png") no-repeat center;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.gallery-arrow-left, .news-arrow-left {
+    transform: rotate(180deg);
+    left: 5px;
+}
+
+.gallery-arrow-right, .news-arrow-right {
+    right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 900px) {
+    .gallery-title, .news-title {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+}

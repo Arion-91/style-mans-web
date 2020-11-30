@@ -1,0 +1,140 @@
+.logo {
+    /*max-width: 50vh;*/
+    width: 621px;
+    display: block;
+    margin: 40px auto;
+}
+
+.header {
+    position: relative;
+    height: 500px; /* TODO may be remove */
+    background-image: url(../img/bg-pop.png),
+                      url(../img/bg-bolls.png),
+                      url(../img/bg-bolls-right.png);
+}
+
+.header-top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header-left-img {
+    position: absolute;
+    margin: 0 50px;
+    height: 100%;
+    width: 100%;
+    background: transparent url(../img/girl-black.png) no-repeat left bottom;
+    background-size: contain;
+}
+
+.header-left img {
+    /*height: 500px;*/
+    /*max-width: 30vh;*/
+}
+
+.header-right {
+    position: absolute;
+    right: 0;
+    color: #008084;
+    font-family: "Comic Sans MS", serif;
+    font-size: 25px;
+}
+
+.header-right .address {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.header-logo p {
+    color: #00A0E3;
+    text-align: center;
+    font-family: "Comic Sans MS", serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.socials {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.socials img {
+    max-height: 40px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+.menu {
+    background-color: #00BDD3;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    padding: 8px 16px;
+    text-transform: lowercase;
+    font-family: Arial sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    border-top: 8px solid #00BDD3;
+    border-bottom: 56px solid transparent;
+    border-left: 64px solid #00BDD3;
+}
+
+
+.menu-hr {
+    width: calc(100vw - 50px - 180px);
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border: 8px solid #00BDD3;
+}
+
+.menu-hr::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -8px;
+    right: -48px;
+    border-top: 16px solid #00BDD3;
+    border-right: 40px solid transparent;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    margin: 10px 50px;
+    color: #00BDD3;
+}
+
+.menu-links a {
+    padding: 8px 16px;
+}

@@ -1,0 +1,90 @@
+.costumes {}
+
+.costumes-category {
+    font-size: 30px;
+    text-transform: lowercase;
+    margin: 20px 0;
+}
+
+.costumes-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.costumes-item-wrap {
+    position: relative;
+    margin: 20px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.costumes-item {
+    margin: 2px;
+    padding: 10px 20px;
+    background-color: #D8F3EF;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.costumes-item img {
+    margin: 0 auto;
+    border: 2px solid #e6e6e6;
+}
+
+.costumes-item .name {
+    color: #999999;
+}
+
+.costumes-item .price-full {
+    color: #999999;
+}
+
+.costumes-item .price-day {
+    color: #008084;
+}
+
+.costumes-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.costumes-arrow {
+    display: block;
+    margin: 10px 20px;
+    width: 30px;
+    height: 30px;
+    background: transparent url("../img/arrow-lenta.png") no-repeat center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.costumes-arrow-left {
+    /*display: none;*/
+    transform: rotate(180deg);
+}
+
+.costumes-arrow-right {
+    /*display: none;*/
+}
+
+.costumes-slider-new .costumes-item-wrap::after {
+    content: "новинка";
+    text-transform: lowercase;
+    color: white;
+    background: #00BDD3;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -30px;
+    left: -77px;
+    width: 172px;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}

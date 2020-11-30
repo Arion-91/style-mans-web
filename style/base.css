@@ -1,0 +1,61 @@
+/*html {*/
+/*    font-size: 16px;*/
+/*}*/
+/*@media screen and (min-width: 320px) {*/
+/*    html {*/
+/*        font-size: calc(16px + 6 * ((100vw - 320px) / 680));*/
+/*    }*/
+/*}*/
+/*@media screen and (min-width: 1000px) {*/
+/*    html {*/
+/*        font-size: 22px;*/
+/*    }*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Comic Sans MS';*/
+/*    src: local('Comic Sans MS');*/
+/*}*/
+
+body {
+    font-family: 'Comic Sans MS', cursive;
+    color: #00BDD3;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-line {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: #00BDD3;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 16px;
+    text-transform: lowercase;
+}
+
+.block {
+    padding: 0 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .block {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .block {
+        padding: 20px;
+    }
+}

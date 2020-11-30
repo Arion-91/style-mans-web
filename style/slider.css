@@ -1,0 +1,121 @@
+.slider {
+    margin: 40px auto;
+    position: relative;
+    max-width: 1200px;
+    border-radius: 50px;
+}
+
+.slider-item {
+    height: 400px;
+    position: relative;
+    margin: 20px;
+    padding: 0;
+    background: #dff4f1;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.slider-item-link {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.slider-item-link img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.slider-item-img {
+    display: none !important;
+    position: absolute;
+    max-height: 105%;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: calc(50% - 30px);
+    width: 40px;
+    height: 40px;
+    background: transparent url("../img/arrow-lenta.png") no-repeat center;
+    z-index: 1;
+}
+
+.slider-arrow-left {
+    display: none;
+    transform: rotate(180deg);
+    left: 15px
+}
+
+.slider-arrow-right {
+    display: none;
+    right: 15px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+}
+
+.slider-dots ul {
+    list-style-type: none;
+}
+
+.slider-dots li {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #A9E8EC;
+    border-radius: 50%;
+}
+
+.slider-dots .slick-active {
+    background-color: #68C7C9;
+}
+
+@media only screen and (min-width: 768px) {
+    .slider-arrow-left {
+        display: block;
+        transform: rotate(180deg);
+    }
+
+    .slider-arrow-right {
+        display: block;
+    }
+
+    .slider-item {
+        padding: 20px 40px;
+    }
+
+    .slider-item-link img {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .slider-item-img {
+        display: block !important;
+    }
+
+    .slider-item-link img {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .slider-arrow-left {
+        left: 45px;
+    }
+
+    .slider-arrow-right {
+        right: 45px;
+    }
+}

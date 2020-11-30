@@ -1,0 +1,52 @@
+.catalogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogs-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.catalogs-item {
+    margin: 30px;
+    max-width: 400px;
+}
+
+.catalogs-item img {
+    border: 2px solid #00BDD3;
+    border-radius: 20px;
+}
+
+.catalogs-item p {
+    text-align: center;
+    color: #00BDD3;
+    text-transform: lowercase;
+    font-family: "Comic Sans MS", serif;
+    font-size: 25px;
+    margin: 5px auto;
+}
+
+.catalogs-item hr {
+    border: 1px solid #00BDD3;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.catalogs-more {
+    margin: 30px;
+    border: none;
+    background: none;
+    font-family: "Comic Sans MS", serif;
+    font-size: 30px;
+    text-transform: lowercase;
+    text-align: center;
+    color: #00BDD3;
+}
