@@ -3,8 +3,8 @@
     background-color: transparent;
     background-image: url(../img/bg-footer-top.png), url(../img/bg-footer-bottom.png), url(../img/bg-footer.jpg);
     background-repeat: no-repeat;
-    background-position: top, bottom, center;
-    background-size: auto 40%, auto 40%, cover;
+    background-position: top, bottom left, center;
+    background-size: auto 35%, auto 15%, cover;
 }
 
 .about-us {
@@ -12,10 +12,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    /*padding-bottom: 20vw;*/
-    /*z-index: 1;*/
-    /*background: transparent url(../img/bg-footer-top.png) no-repeat top;*/
-    /*background-size: cover;*/
+    /*padding-bottom: calc(100% - 100px);*/
     color: white;
     text-align: center;
     font-size: 20px;
@@ -42,8 +39,6 @@
     margin: 50px;
     left: 0;
     padding: 20px;
-    /*width: calc(659px / 2);*/
-    /*height: calc(658px / 2);*/
     width: 25vw;
     height: 25vw;
     max-width: 659px;
@@ -61,13 +56,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*padding-top: 40vw;*/
-    /*position: relative;*/
-    /*top: -50vw;*/
-    /*z-index: -1;*/
-    /*background: transparent url(../img/bg-footer.jpg) no-repeat center;*/
-    /*background-size: cover;*/
     font-size: 20px;
+    margin: 50px 0;
 }
 
 .contacts {
@@ -108,31 +98,66 @@
 }
 
 .footer-end {
+    font-size: 24px;
+    color: white;
+}
 
+.footer-end-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-end-menu p {
+    margin: 3px;
+}
+
+.footer-end-address {
+    display: none;
+    text-align: center;
+}
+
+.footer-end-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.footer-end-info .socials img {
+    color: white;
 }
 
 @media only screen and (min-width: 425px) {
-    .footer-info {
-        /*top: -40vw;*/
+    .footer {
+        background-size: auto 30%, auto 20%, cover;
     }
 
-    .about-us {
-        padding-bottom: 20vw;
+    .footer-info {
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+    .footer-end-address {
+        display: block;
+        text-align: right;
+    }
+
+    .footer-end-info {
+        margin: 0;
+        align-items: flex-end;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .footer {
-        background-size: auto 45%, auto 45%, cover;
+        background-size: auto 35%, contain, cover;
     }
 
     .footer-info {
         flex-direction: row;
-        /*top: -30vw;*/
-    }
-
-    .about-us {
-        padding-bottom: 0;
     }
 
     .yandex-map {
@@ -146,11 +171,21 @@
 
 @media only screen and (min-width: 1024px) {
     .footer {
-        background-size: auto 45%, auto 45%, cover;
+        background-size: auto 35%, contain, cover;
     }
 
     .about-us-party {
         display: block;
+    }
+
+    .footer-end-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .footer-end-menu p {
+        margin: 10px;
     }
 }
 
@@ -174,7 +209,7 @@
     }
 
     .about-us {
-        background: none;
+        /*background: none;*/
     }
 }
 
